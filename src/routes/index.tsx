@@ -32,6 +32,7 @@ import house7 from "@/assets/house-7.jpg";
 import house8 from "@/assets/house-8.jpg";
 import house9 from "@/assets/house-9.jpg";
 import house10 from "@/assets/house-10.jpg";
+import logo from "@/assets/southhomes-logo.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -55,7 +56,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const PHONE = "0984 806 808";
+const PHONE = "0868 612 719";
 
 const specs = [
   { icon: Maximize2, label: "Diện tích", value: "60 m²" },
@@ -110,8 +111,11 @@ function Index() {
       <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-background/70 border-b border-border/60">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <a href="#top" className="flex items-center gap-2">
-            <Sparkles className="h-5 w-5 text-gold" />
-            <span className="font-display text-lg font-semibold tracking-tight">Số 63 Bến Láng</span>
+            <img src={logo} alt="South Homes" className="h-10 w-10 rounded-lg object-cover" />
+            <div className="leading-tight">
+              <div className="font-display text-base font-semibold tracking-tight">South Homes</div>
+              <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Số 63 Bến Láng</div>
+            </div>
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
             <a href="#specs" className="hover:text-foreground transition-smooth">Thông số</a>
@@ -417,8 +421,8 @@ function Index() {
       <footer className="bg-charcoal text-ivory/70 py-10 border-t border-ivory/10">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
           <div className="flex items-center gap-2">
-            <Sparkles className="h-4 w-4 text-gold" />
-            <span className="font-display text-ivory">Số 63 Bến Láng</span>
+            <img src={logo} alt="South Homes" className="h-8 w-8 rounded-md object-cover" />
+            <span className="font-display text-ivory">South Homes — Số 63 Bến Láng</span>
           </div>
           <div>© 2026 — Tuyệt phẩm nhà phố Lê Hồng Phong, Hải Phòng.</div>
         </div>
