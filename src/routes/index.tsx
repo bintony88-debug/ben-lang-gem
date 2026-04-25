@@ -358,7 +358,7 @@ function Index() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-gold" />
-                  <span>info@nhapho-haiphong.vn</span>
+                  <a href="mailto:ceosouthhome@gmail.com" className="hover:text-gold transition-smooth">ceosouthhome@gmail.com</a>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="h-5 w-5 text-gold" />
